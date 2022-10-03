@@ -1,6 +1,6 @@
 let nextPageToken = ""
-fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCxh8bWAqI3TgQUGJtOWKVnw&maxResults=10&order=date&key=AIzaSyAa7RkheBHNZ6bjxNu_yJiXZExvrCIM-1Q"+nextPageToken)
-.then((result)=>{
+fetch("https://youtube.googleapis.com/youtube/v3/activities?part=snippet&channelId=UCV6luCxsKUK2Ld-Zav-pGeg&maxResults=10&key=AIzaSyAa7RkheBHNZ6bjxNu_yJiXZExvrCIM-1Q"+nextPageToken)
+then((result)=>{
     return result.json()
 }).then((data)=>{
     console.log(data)
